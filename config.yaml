@@ -1,6 +1,6 @@
-baseURL: http://example.org/
+baseURL: https://rishabhportfolio101.netlify.app/
 languageCode: en-us
-title: Forty
+title: Portfolio website for rishabh kaushik
 theme: forty
 googleAnalytics: ''
 disqusShortname: ''
@@ -10,26 +10,26 @@ params:
     subtitle: |-
       A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
       AND RELEASED UNDER THE CREATIVE COMMONS.
-    title: Hi, my name is Forty
+    title: Hi, my name is rishabh
   blog: {}
   contact:
     address:
-      - city: City, ST 00000
-        country: Country
-        street: Street
-        title: Address
+      - city: london,
+        country: uk
+        street: mallory street
+        title: fulmer house
     buttonClear: Clear
     buttonSend: Send message
     email:
-      - email: example@domain.com
+      - email: rishabh1331@gmail.com
         title: Email
     enable: yes
     phone:
-      - phone: (000) 000-0000 x1234
+      - phone: (+44) 7765629297
         title: Phone
   custom_css: []
   custom_js: []
-  description: Your description
+  description: student at LBS 
   error404:
     heading: Page couldn't be found
     text: Please visit [this page](/)
@@ -41,24 +41,24 @@ params:
       - alt: HTML5 UP
         text: 'Design: '
         url: https://www.html5up.net
-    social:
-      - icon: fa-twitter
-        label: Twitter
-        url: https://www.twitter.com
-      - icon: fa-facebook
-        label: Facebook
-        url: https://www.facebook.com
-      - icon: fa-instagram
-        label: Instagram
-        url: https://www.instagram.com
-      - icon: fa-github
+    #social:
+      #- icon: fa-twitter
+      #  label: Twitter
+      #  url: https://www.twitter.com
+      #- icon: fa-facebook
+      #  label: Facebook
+      #  url: https://www.facebook.com
+      #- icon: fa-instagram
+      #  label: Instagram
+       # url: https://www.instagram.com
+      #- icon: fa-github
         label: GitHub
-        url: https://www.github.com
-      - icon: fa-linkedin
-        label: LinkedIn
-        url: https://www.linkedin.com
+        url: https://github.com/rishabh1331/mywebsite
+   #   - icon: fa-linkedin
+    #    label: LinkedIn
+        #url: https://www.linkedin.com
   image: ''
-  name: Your name
+  name: rishabh kaushik
   navigation:
     button1:
       - name: Get Started
