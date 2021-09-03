@@ -13,6 +13,4 @@
   HUGO_VERSION = "0.87.0"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.87.0"  
-  
-  
+  HUGO_VERSION = "0.87.0"
