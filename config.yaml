@@ -51,11 +51,11 @@ params:
       #- icon: fa-instagram
       #  label: Instagram
        # url: https://www.instagram.com
-      icon: fa-github
+      - icon: fa-github
         label: GitHub
         url: https://github.com/rishabh1331/mywebsite
-   icon: fa-linkedin
-     label: LinkedIn
+      - icon: fa-linkedin
+        label: LinkedIn
         url: https://www.linkedin.com/in/therishabhkaushik/
   image: ''
   name: rishabh kaushik
