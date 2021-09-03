@@ -41,7 +41,7 @@ params:
       - alt: HTML5 UP
         text: 'Design: '
         url: https://www.html5up.net
-    #social:
+    social:
       #- icon: fa-twitter
       #  label: Twitter
       #  url: https://www.twitter.com
@@ -51,12 +51,12 @@ params:
       #- icon: fa-instagram
       #  label: Instagram
        # url: https://www.instagram.com
-      #- icon: fa-github
+      icon: fa-github
         label: GitHub
         url: https://github.com/rishabh1331/mywebsite
-   #   - icon: fa-linkedin
-    #    label: LinkedIn
-        #url: https://www.linkedin.com
+   icon: fa-linkedin
+     label: LinkedIn
+        url: https://www.linkedin.com/in/therishabhkaushik/
   image: ''
   name: rishabh kaushik
   navigation:
@@ -82,8 +82,8 @@ params:
     enable: yes
     showcase:
       - image: pic01.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
+        subtitle: Rishabh Kaushik, MAM, London Business School
+        title: About
         url: blogs/aliquam
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
