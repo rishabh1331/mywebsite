@@ -14,7 +14,7 @@ slug: magna
 title: 2nd Project
 ---   
 
-```{r}
+```{r, show=FALSE, message=FALSE}
 library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
 library(gapminder)  # gapminder dataset
 library(readr)
