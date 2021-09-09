@@ -97,7 +97,7 @@ params:
         subtitle: Nisl Sed Aliquam
         title: Ipsum
         url: blogs/ipsum
-    - image: rishabhcv.jpg
+      - image: rishabhcv.jpg
         subtitle: Feugiat Amet Tempus
         title: Etiam
         url: blogs/etiam
