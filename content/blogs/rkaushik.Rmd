@@ -28,15 +28,7 @@ library(stringi)
 
 
 ## Hello 
-My name is **Rishabh Kaushik** and I’m a tech enthusiast and a keen believer in learning. I have done my engineering from Birla Institute of Technology and Science, Dubai([school website--](https://www.bits-pilani.ac.in/Dubai/)) in computer science. Having lived in Dubai and India, I have developed a keen understanding of different cultures. 
-I also had the opportunity to understand deep implication of the data analytics on the finance industry during my internship at Grant Thornton Dubai. 
-I have knowledge and interest in data analytics, machine learning and visualization tools.
-While in school, I earned excellence award for my exemplary academic performance and leadership skills.
-I love to go for hikes and treks.
-I play the following sports- 
-- Football
-- Cricket
-- Badminton
+This project is about country comparison on the basis of life expectancy.
 
 # Task 2: `gapminder` country comparison
 

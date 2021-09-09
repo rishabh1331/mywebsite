@@ -105,6 +105,10 @@ params:
         subtitle: Feugiat Amet Tempus
         title: Etiam
         url: blogs/ipsum
+      - title = "Who am I?"
+        subtitle = "From me growing up to now"
+        image = "rishabhcv.jpg"
+        url = "blogs/CV"
   two:
     buttonText: Get Started
     enable: yes
