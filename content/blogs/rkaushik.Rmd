@@ -38,9 +38,6 @@ I play the following sports-
 - Cricket
 - Badminton
 
-![The latest photo of LBS ](https://images.app.goo.gl/6HXwCs9FwprnDNnd6)
-
-
 # Task 2: `gapminder` country comparison
 
 
