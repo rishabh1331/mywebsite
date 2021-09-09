@@ -104,7 +104,8 @@ params:
       - image: rishabhcv.jpg
         subtitle: Feugiat Amet Tempus
         title: Etiam
-        url: blogs/ipsum
+        url: blogs/etiam
+     
       
   two:
     buttonText: Get Started
