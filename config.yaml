@@ -85,28 +85,22 @@ params:
         subtitle: Rishabh Kaushik, MAM, London Business School
         title: About
         url: blogs/aliquam
-        s
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
         title: Tempus
         url: blogs/tempus
-        
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
         url: blogs/magna
-        
       - image: rishabhcv.jpg
         subtitle: Nisl Sed Aliquam
         title: Ipsum
         url: blogs/ipsum
-      
     - image: rishabhcv.jpg
         subtitle: Feugiat Amet Tempus
         title: Etiam
         url: blogs/etiam
-
-      
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
         title: Consequat
