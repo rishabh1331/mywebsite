@@ -101,6 +101,16 @@ params:
         title: Ipsum
         url: blogs/ipsum
       
+    - image: rishabhcv.jpg
+        subtitle: Feugiat Amet Tempus
+        title: Etiam
+        url: blogs/etiam
+
+      
+      - image: pic05.jpg
+        subtitle: Ipsum Dolor Sit Amet
+        title: Consequat
+        url: blogs/consequat
   two:
     buttonText: Get Started
     enable: yes
