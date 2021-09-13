@@ -87,15 +87,15 @@ params:
         url: blogs/aliquam
       - image: lifexp.jpg
         subtitle: Feugiat Amet Tempus
-        title: Tempus
+        title: Project:- Continent comparison - Life Expectancy. 
         url: blogs/tempus
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
-        title: Magna
+        title: About my Start-up 
         url: blogs/magna
       - image: rescv.jpg
         subtitle: Nisl Sed Aliquam
-        title: Ipsum
+        title: Background and Resume.
         url: blogs/ipsum
       - image: rishabhcv.jpg
         subtitle: Feugiat Amet Tempus
@@ -103,7 +103,7 @@ params:
         url: blogs/etiam
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
-        title: Consequat
+        title: 2nd Project
         url: blogs/consequat
   two:
     buttonText: Get Started
