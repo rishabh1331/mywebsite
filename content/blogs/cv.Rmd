@@ -33,6 +33,7 @@ Thanks to my multicultural background I was, and still is, always interested in 
 Outside of the academic and professional framework, I love playing soccer/football (I do not know where you are reading this from) and chess, I am also an avid swimmer. When COVID will be more under control, I would gladly start attending theatrical plays once again, my personal favorites are the ones of the classical era.
 
 Here below is my CV, and feel free to reach out:
+efjiejfiejfieji
 
 ```{r, echo=FALSE, fig.width=1,fig.height=1}
 knitr::include_graphics("/img/rishabhcv.jpg",error=FALSE)
