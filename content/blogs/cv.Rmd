@@ -34,6 +34,6 @@ Outside of the academic and professional framework, I love playing soccer/footba
 
 Here below is my CV, and feel free to reach out:
 
-```{r, echo=FALSE, fig.width=3,fig.height=3}
+```{r, echo=FALSE, fig.width=1,fig.height=1}
 knitr::include_graphics("/img/rishabhcv.jpg",error=FALSE)
 ```
