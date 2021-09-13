@@ -3,18 +3,88 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:42:51-05:00"
-description: Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna
-  sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa
-  sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-  consequat tincidunt. Vivamus et sagittis tempus.
+description: Consequat Tile.
 draft: false
 image: lbs.jpg
 keywords: ""
-slug: tempuwidi
+slug: consequat
 title: 2nd Project
 ---   
 
-## Hello 
-My name is **Rishabh Kaushik** and I’m a tech enthusiast. During my 2nd year of engineering, I got a chance to participate in Road and Transport Authority Hackathon. The Hackathon was about providing innovative transport solutions to the current Dubai Taxi Services. 
-We came up with an idea of a smart kiosk and a point of sale device to book cabs. Our idea was liked by the judges at RTA, and hence we were provided incubation from the RTA. After working on the idea for more than a year and succesfully implementing it in more than 100 locations, we mutually decided with Dubai Taxi Corporation to take our idea forward in other Emirates through public body connects. 
-defojwdpowjodjqosjqposjpoqjspqjpo
+sBREXIT RESULT ANALYSIS
+
+This project is done to analyse the brexit vote.
+
+```{r, show=FALSE, message=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(gapminder)  # gapminder dataset
+library(readr)
+library(ggplot2) 
+library(here)
+library(janitor)
+library(htmltools)
+library(stringi)
+```
+```{r}
+brexit_results <- read_csv(here::here("data","brexit_results.csv"))
+glimpse(brexit_results)
+```
+
+```{r}
+brexit_histogram <- ggplot(brexit_results, aes(x = leave_share)) +
+  geom_histogram(binwidth = 2.5)
+
+brexit_histogram <- brexit_histogram +
+labs(title = "Brexit Leave Share",
+     x = "leave share") +
+NULL
+
+brexit_density_plot <- ggplot(brexit_results, aes(x = leave_share)) +
+  geom_density()
+brexit_density_plot<- brexit_density_plot +
+  labs(title = "Brexit Density Plot",
+       x = "Leave Share") +
+  NULL
+
+
+brexit_cum_dis <- ggplot(brexit_results, aes(x = leave_share)) +
+  stat_ecdf(geom = "step", pad = FALSE) +
+  scale_y_continuous(labels = scales::percent)
+brexit_cum_dis <- brexit_cum_dis +
+  labs(title = "Brexit Cummulative Distribution",
+       x = "leave Share")+
+  NULL
+  
+```
+
+
+
+```{r}
+ brexit_results %>% 
+  select(leave_share, born_in_uk) %>% 
+  cor()
+```
+
+```{r}
+brexit_immigration_plot <- ggplot(brexit_results, aes(x = born_in_uk, y = leave_share)) +
+  geom_point(alpha=0.3) +
+  
+
+  geom_smooth(method = "lm") + 
+  
+
+  theme_bw() +
+  NULL
+brexit_immigration_plot <- brexit_immigration_plot +
+  labs(title = "Correlation Between native residents and their leave share",
+       x = "born in UK",
+       y = "leave share") +
+  NULL
+```
+ 
+
+The correlation is almost 0.5, which shows that the two variables are positively correlated.
+
+
+Looking at the graphs and plots, we can say there is positive correlation between people born in Uk and its leave share. Graph implies about 50% of the native residents were supporting Brexit. There might be a possibility people in areas where migration rate is low have higher proportion of leave voters compared to areas with high migration rate. So, immigration could be a major factor impacting the brexit result.
+

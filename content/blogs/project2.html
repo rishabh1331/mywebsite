@@ -3,23 +3,92 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:42:51-05:00"
-description: Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna
-  sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa
-  sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem
-  consequat tincidunt. Vivamus et sagittis tempus.
+description: Consequat Tile.
 draft: false
 image: lbs.jpg
 keywords: ""
-slug: tempuwidi
+slug: consequat
 title: 2nd Project
 ---   
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<div id="hello" class="section level2">
-<h2>Hello</h2>
-<p>My name is <strong>Rishabh Kaushik</strong> and I’m a tech enthusiast. During my 2nd year of engineering, I got a chance to participate in Road and Transport Authority Hackathon. The Hackathon was about providing innovative transport solutions to the current Dubai Taxi Services.
-We came up with an idea of a smart kiosk and a point of sale device to book cabs. Our idea was liked by the judges at RTA, and hence we were provided incubation from the RTA. After working on the idea for more than a year and succesfully implementing it in more than 100 locations, we mutually decided with Dubai Taxi Corporation to take our idea forward in other Emirates through public body connects.
-defojwdpowjodjqosjqposjpoqjspqjpo</p>
-</div>
+<p>sBREXIT RESULT ANALYSIS</p>
+<p>This project is done to analyse the brexit vote.</p>
+<pre class="r"><code>library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(gapminder)  # gapminder dataset
+library(readr)
+library(ggplot2) 
+library(here)
+library(janitor)
+library(htmltools)
+library(stringi)</code></pre>
+<pre class="r"><code>brexit_results &lt;- read_csv(here::here(&quot;data&quot;,&quot;brexit_results.csv&quot;))</code></pre>
+<pre><code>## Rows: 632 Columns: 11</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr  (1): Seat
+## dbl (10): con_2015, lab_2015, ld_2015, ukip_2015, leave_share, born_in_uk, m...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>glimpse(brexit_results)</code></pre>
+<pre><code>## Rows: 632
+## Columns: 11
+## $ Seat        &lt;chr&gt; &quot;Aldershot&quot;, &quot;Aldridge-Brownhills&quot;, &quot;Altrincham and Sale W…
+## $ con_2015    &lt;dbl&gt; 50.592, 52.050, 52.994, 43.979, 60.788, 22.418, 52.454, 22…
+## $ lab_2015    &lt;dbl&gt; 18.333, 22.369, 26.686, 34.781, 11.197, 41.022, 18.441, 49…
+## $ ld_2015     &lt;dbl&gt; 8.824, 3.367, 8.383, 2.975, 7.192, 14.828, 5.984, 2.423, 1…
+## $ ukip_2015   &lt;dbl&gt; 17.867, 19.624, 8.011, 15.887, 14.438, 21.409, 18.821, 21.…
+## $ leave_share &lt;dbl&gt; 57.89777, 67.79635, 38.58780, 65.29912, 49.70111, 70.47289…
+## $ born_in_uk  &lt;dbl&gt; 83.10464, 96.12207, 90.48566, 97.30437, 93.33793, 96.96214…
+## $ male        &lt;dbl&gt; 49.89896, 48.92951, 48.90621, 49.21657, 48.00189, 49.17185…
+## $ unemployed  &lt;dbl&gt; 3.637000, 4.553607, 3.039963, 4.261173, 2.468100, 4.742731…
+## $ degree      &lt;dbl&gt; 13.870661, 9.974114, 28.600135, 9.336294, 18.775591, 6.085…
+## $ age_18to24  &lt;dbl&gt; 9.406093, 7.325850, 6.437453, 7.747801, 5.734730, 8.209863…</code></pre>
+<pre class="r"><code>brexit_histogram &lt;- ggplot(brexit_results, aes(x = leave_share)) +
+  geom_histogram(binwidth = 2.5)
+
+brexit_histogram &lt;- brexit_histogram +
+labs(title = &quot;Brexit Leave Share&quot;,
+     x = &quot;leave share&quot;) +
+NULL
+
+brexit_density_plot &lt;- ggplot(brexit_results, aes(x = leave_share)) +
+  geom_density()
+brexit_density_plot&lt;- brexit_density_plot +
+  labs(title = &quot;Brexit Density Plot&quot;,
+       x = &quot;Leave Share&quot;) +
+  NULL
+
+
+brexit_cum_dis &lt;- ggplot(brexit_results, aes(x = leave_share)) +
+  stat_ecdf(geom = &quot;step&quot;, pad = FALSE) +
+  scale_y_continuous(labels = scales::percent)
+brexit_cum_dis &lt;- brexit_cum_dis +
+  labs(title = &quot;Brexit Cummulative Distribution&quot;,
+       x = &quot;leave Share&quot;)+
+  NULL</code></pre>
+<pre class="r"><code> brexit_results %&gt;% 
+  select(leave_share, born_in_uk) %&gt;% 
+  cor()</code></pre>
+<pre><code>##             leave_share born_in_uk
+## leave_share   1.0000000  0.4934295
+## born_in_uk    0.4934295  1.0000000</code></pre>
+<pre class="r"><code>brexit_immigration_plot &lt;- ggplot(brexit_results, aes(x = born_in_uk, y = leave_share)) +
+  geom_point(alpha=0.3) +
+  
+
+  geom_smooth(method = &quot;lm&quot;) + 
+  
+
+  theme_bw() +
+  NULL
+brexit_immigration_plot &lt;- brexit_immigration_plot +
+  labs(title = &quot;Correlation Between native residents and their leave share&quot;,
+       x = &quot;born in UK&quot;,
+       y = &quot;leave share&quot;) +
+  NULL</code></pre>
+<p>The correlation is almost 0.5, which shows that the two variables are positively correlated.</p>
+<p>Looking at the graphs and plots, we can say there is positive correlation between people born in Uk and its leave share. Graph implies about 50% of the native residents were supporting Brexit. There might be a possibility people in areas where migration rate is low have higher proportion of leave voters compared to areas with high migration rate. So, immigration could be a major factor impacting the brexit result.</p>
