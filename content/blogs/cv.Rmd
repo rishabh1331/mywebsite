@@ -20,8 +20,8 @@ knitr::opts_chunk$set(
 options(digits = 3)
 # default figure size
 knitr::opts_chunk$set(
-  fig.width=6.75, 
-  fig.height=6.75,
+  fig.width=2.75, 
+  fig.height=2.75,
   fig.align = "center"
 )
 ```
