@@ -26,11 +26,7 @@ library(htmltools)
 library(stringi)
 ```
 
-
-## Hello 
-This project is about country comparison on the basis of life expectancy.
-
-# Task 2: `gapminder` country comparison
+country comparison
 
 
 ```{r}
@@ -109,7 +105,6 @@ brexit_cum_dis <- brexit_cum_dis +
   NULL
   
 ```
-
 
 
 
@@ -273,9 +268,5 @@ base_plot + stat_ecdf(geom = "step", pad = FALSE) +
 
 
   
-  
-Knit the completed R Markdown file as an HTML document (use the "Knit" button at the top of the script editor window) and upload it to Canvas.
-
-
 
 
