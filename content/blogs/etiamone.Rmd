@@ -8,9 +8,8 @@ draft: false
 image: lbs.jpg
 keywords: ""
 slug: etiam
-title: etiamone
+title: etiam
 ---
-
 
 ```{r, show=FALSE, message=FALSE}
 library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
