@@ -11,7 +11,7 @@ slug: consequat
 title: 2nd Project
 ---   
 
-sBREXIT RESULT ANALYSIS
+BREXIT RESULT ANALYSIS
 
 This project is done to analyse the brexit vote.
 
